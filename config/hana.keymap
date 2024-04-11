@@ -174,7 +174,7 @@
 &trans     &trans    &trans     &kp C_VOL_UP &trans     &trans           &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans &kp PSCRN
 &trans     &ss       &kp C_PREV &kp C_PP     &kp C_NEXT &trans           &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans &trans
 &trans     &trans    &trans     &kp C_VOL_DN &trans     &trans           &trans    &trans    &trans    &trans    &trans &trans
-                                &kp C_MUTE   &trans     &kp DEL          &kp ENTER &mkp LCLK &mkp RCLK
+                                &kp C_MUTE   &trans     &kp DEL          &kp ENTER &trans    &trans
             >;
         };
 
