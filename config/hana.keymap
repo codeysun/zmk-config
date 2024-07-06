@@ -151,9 +151,9 @@
 // ------------------------------------------------------------------------------------------
 // |  RST  |     |     |      |alt+f4|      | | BT1  |  BT2  |  BT3  | BT4  |  BT5  | BTCLR |
 // ------------------------------------------------------------------------------------------
-// | c+a+d |     |     |  V+  |      |      | | Home | PgDn  | PgUp  | End  |       |       |
+// | c+a+d |     |     |  V+  |      |      | | Home | PgDn  | PgUp  | End  | OUTUSB|       |
 // ------------------------------------------------------------------------------------------
-// |       |Prtsc| <<  | Play |  >>  |      | |  <   |   v   |  ^    |  >   |       |       |
+// |       |Prtsc| <<  | Play |  >>  |      | |  <   |   v   |  ^    |  >   | OUTBLE|       |
 // ------------------------------------------------------------------------------------------
 // |       |     |     |  V-  |      |      | | m<   |  mv   | m^    | m>   |       |       |
 // ------------------------------------------------------------------------------------------
@@ -161,8 +161,8 @@
 //                     -----------------------------------------------                       
             bindings = <
 &sys_reset   &trans    &trans     &trans       &alt_f4    &trans           &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-&ctl_alt_del &trans    &trans     &kp C_VOL_UP &trans     &trans           &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans &trans
-&trans       &kp PSCRN &kp C_PREV &kp C_PP     &kp C_NEXT &trans           &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans &trans
+&ctl_alt_del &trans    &trans     &kp C_VOL_UP &trans     &trans           &kp HOME  &kp PG_DN &kp PG_UP &kp END   &out OUT_USB &trans
+&trans       &kp PSCRN &kp C_PREV &kp C_PP     &kp C_NEXT &trans           &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &out OUT_BLE &trans
 &trans       &trans    &trans     &kp C_VOL_DN &trans     &trans           &trans    &trans    &trans    &trans    &trans &trans
                                   &kp C_MUTE   &trans     &kp DEL          &kp ENTER &trans    &trans
             >;
