@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT   0
 #define GAME      1
@@ -158,14 +159,14 @@
 // ------------------------------------------------------------------------------------------
 // |       |     |     |  V-  |      |      | | m<   |  mv   | m^    | m>   |       |       |
 // ------------------------------------------------------------------------------------------
-//                     | Mute |      | DEL  | |ENTER | lclk  | rclk  |
+//                     | Mute |      | DEL  | |lclk | rclk  | mclk   |
 //                     -----------------------------------------------                       
             bindings = <
 &sys_reset   &trans    &trans     &trans       &alt_f4    &trans           &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
 &ctl_alt_del &trans    &trans     &kp C_VOL_UP &trans     &trans           &kp HOME  &kp PG_DN &kp PG_UP &kp END   &out OUT_USB &trans
 &trans       &kp PSCRN &kp C_PREV &kp C_PP     &kp C_NEXT &trans           &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &out OUT_BLE &trans
-&trans       &trans    &trans     &kp C_VOL_DN &trans     &trans           &trans    &trans    &trans    &trans    &trans &trans
-                                  &kp C_MUTE   &trans     &kp DEL          &kp ENTER &trans    &trans
+&trans       &trans    &trans     &kp C_VOL_DN &trans     &trans           &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP    &mmv MOVE_RIGHT    &trans &trans
+                                  &kp C_MUTE   &trans     &kp DEL          &mkp MB1    &mkp MB2    &mkp MB3
             >;
         };
 
