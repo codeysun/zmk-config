@@ -109,7 +109,7 @@
 
         gamealt_layer {
 // ------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   | |      |       |       |      |       |       |
+// |  ESC  |  F1 | F2  | F3   | F4   | F5   | |      |       |       |      |       |       |
 // ------------------------------------------------------------------------------------------
 // |  TAB  |  Q  |  W  |  E   |  Y   |  U   | |      |       |       |      |       |       |
 // ------------------------------------------------------------------------------------------
@@ -120,7 +120,7 @@
 //                     |  ,   |  .   |  SPC | |      |       |       |
 //                     -----------------------------------------------                       
             bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3    &kp N4   &kp N5           &trans &trans &trans &trans &trans &trans
+&kp ESC   &kp F1 &kp F2 &kp F3    &kp F4   &kp F5           &trans &trans &trans &trans &trans &trans
 &kp TAB   &kp Q  &kp W  &kp E     &kp Y    &kp U            &trans &trans &trans &trans &trans &trans
 &trans    &kp A  &kp S  &kp D     &kp H    &kp J            &trans &trans &trans &trans &trans &trans
 &kp LSHFT &kp Z  &kp X  &kp C     &kp N    &kp M            &trans &trans &trans &trans &trans &trans
